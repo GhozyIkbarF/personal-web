@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Inter&family=Poppins&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +7,18 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --colors-gray1: #161616;
+  --colors-gray2: #1c1c1c;
+  --colors-gray3: #232323;
+  --colors-gray4: #282828;
+  --colors-gray5: #2e2e2e;
+  --colors-gray6: #343434;
+  --colors-gray7: #3e3e3e;
+  --colors-gray8: #505050;
+  --colors-gray9: #707070;
+  --colors-gray10: #7e7e7e;
+  --colors-gray11: #a0a0a0;
+  --colors-gray-dark-500: 0deg 0% 18%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,10 +31,73 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  font-family: 'poppins', sans-serif;
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+    background-color: var(--colors-gray2)
+}
+.bg-gray1 {
+  background-color: var(--colors-gray1);
+}
+.border-gray-dark {
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+   border-color: hsl(0deg 0% 18%);
+}
+.font-gochi{
+  font-family: 'Gochi Hand', cursive;
+}
+
+
+
+/* fonts.css */
+/* @font-face {
+  font-family: 'Gochi Hand';
+  src: url('/fonts/GochiHand-Regular.ttf') format('truetype');
+} */
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+
+.fade-in-start [data-fade="1"] {
+  transition-delay: .1s;
+}
+.fade-in-start [data-fade="2"] {
+  transition-delay: .2s;
+}
+.fade-in-start [data-fade="2"] {
+  transition-delay: .2s;
+}
+.fade-in-start [data-fade="2"] {
+  transition-delay: .2s;
+}
+
+.showcase-preview_preview__HcSHu img {
+  width: 100%;
+  height: 100%;
+  transition: filter .15s ease;
+}
+.showcase-preview_preview__HcSHu {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.03), 0 2px 4px rgba(0,0,0,.05), 0 12px 24px rgba(0,0,0,.05);
+  cursor: pointer;
+  position: relative;
+  transition: box-shadow .15s ease;
+}
+
+.bg-rgb-alpha {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Apply the custom class on group hover */
+.group:hover .bg-rgb-alpha {
+  background-color: rgba(255, 255, 255, 0.5);
 }
