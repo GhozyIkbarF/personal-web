@@ -34,8 +34,8 @@ export default function Navbar() {
     }
   }, [currentPosition]);
   return (
-    <nav className={`h-[70px] md:h-[80px] w-full flex justify-between items-center px-5 sm:px-24 lg:px-40 z-50 fixed transition-all ${isScrollingUp || currentPosition < 68 ? 'top-0 bg-black bg-opacity-90' : 'top-[-68px]'}`}>
-      <Link href={'/'} className='text-2xl font-gochi font-bold'>ghozy.</Link>
+    <nav className={`h-[70px] md:h-[80px] w-full flex justify-between items-center px-5 sm:px-24 lg:px-40 z-50 fixed transition-all ${isScrollingUp || currentPosition < 68 ? 'top-0 bg-gray1 ' : 'top-[-68px]'}`}>
+      <Link href={'/'} className='text-2xl font-gochi font-bold text-brand'>ghozy.</Link>
       <ul className=" flex text-md md:text-xl gap-4 md:gap-6">
         <li><Link href={'#projects'} className='group'>Projects</Link></li>
         <li><Link href={'#experience'} className='group'>Experience</Link></li>

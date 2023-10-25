@@ -1,12 +1,16 @@
 import React from "react";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
+import Title from "./components/title";
 
 export default function Home() {
   return (
-    <main className="w-full flex min-h-screen flex-col">
-      <Main/>
-      <Footer/>
-    </main>
+    <React.Fragment>
+      <Title/>
+      <main className="w-full flex min-h-screen flex-col scroll-smooth">
+        <Main/>
+        <Footer/>
+      </main>
+    </React.Fragment>
   )
 }

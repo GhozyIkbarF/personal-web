@@ -7,7 +7,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --colors-gray1: #161616;
+  --colors-gray1: #131313;
   --colors-gray2: #1c1c1c;
   --colors-gray3: #232323;
   --colors-gray4: #282828;
@@ -28,20 +28,30 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   color: rgb(var(--foreground-rgb));
-  font-family: 'poppins', sans-serif;
+  /* font-family: 'poppins', sans-serif; */
+  font-family: 'helvetica', sans-serif;
   /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-    background-color: var(--colors-gray2)
+    background-color: var(--colors-gray1)
 }
 .bg-gray1 {
   background-color: var(--colors-gray1);
+}
+.bg-gray2 {
+  background-color: var(--colors-gray2);
+}
+.text-brand {
+  color: #3ecf9a;
 }
 .border-gray-dark {
   box-sizing: border-box;
