@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Title from '@/app/components/title'
 import { projectsData as data } from '@/app/components/Main'
+import TechIcons from '@/app/components/Icon'
 import LightGallery from 'lightgallery/react';
 // import styles
 import 'lightgallery/css/lightgallery.css';
@@ -29,11 +30,7 @@ export default function DetailMovie({ params: { id } }) {
             <Title title={dataProject.title} />
             <div className='w-full mt-[100px] flex flex-col px-5 gap-4 sm:px-20 lg:px-40'>
                 <h1 className='font-extrabold text-3xl md:text-5xl'>{dataProject.title}</h1>
-                <ul className='flex items-center gap-2'>
-                            {dataProject.tech?.map((tech, index) => (
-                                <li key={index}>{tech}</li>
-                            ))}
-                        </ul>
+                <TechIcons techs={dataProject.tech} className="w-5 h-5 text-foreground lg:w-7 lg:h-7"/>
                 <div className='relative w-full h-48 lg:w-4/6 lg:h-[420px]'>
                     <LightGallery
                         speed={500}

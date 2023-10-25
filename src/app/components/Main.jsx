@@ -158,7 +158,7 @@ const Projects = () => {
             <div className='w-full max-h-96 flex flex-col gap-1 rounded-lg p-5 cursor-pointer sm:hover:scale-105 transition-all border-gray-dark bg-gray2' onClick={() => router.push(`/projects/detail/${index}`)}>
                 <h1 className='font-bold text-xl'>{project.title}</h1>
                 <p className='text-gray-300 truncate'>{project.desc}</p>
-                <TechIcons techs={project.tech} className='w-5 h-5 text-foreground lg:w-7 lg:h-7' />
+                <TechIcons techs={project.tech} className={'w-5 h-5 text-textgrey transition-all duration-100 ease-in-out hover:text-foreground'} />
                 <Link href={''} className='w-full mb-1 showcase-preview_preview__HcSHu'>
                     <Image src={project.img}
                         sizes="(max-width: 300px)"

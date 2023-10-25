@@ -1,11 +1,5 @@
 import React from "react";
-import Sijavascript from '../assets/icon/javascript.svg'
-import SiReact from '../assets/icon/react.svg'
-import SiNextdotjs from '../assets/icon/nextdotjs.svg'
-import Siexpress from '../assets/icon/express.svg'
-import SiPrisma from '../assets/icon/prisma.svg'
-import SiMysql from '../assets/icon/mysql.svg'
-import SiTailwindcss from '../assets/icon/tailwindcss.svg'
+import { SiNextdotjs, SiPrisma, SiMysql, SiTailwindcss, SiPhp, SiBootstrap, SiReact, SiJavascript, SiHtml5, SiVite, SiExpress } from "@icons-pack/react-simple-icons";
 
 const techList = {
     "next.js": {
@@ -18,7 +12,7 @@ const techList = {
     },
     "express.js": {
         name: "express.js",
-        icon: <Siexpress />
+        icon: <SiExpress />
     },
     "mySQL": {
         name: "mySQL",
@@ -42,7 +36,7 @@ const techList = {
     },
     "javascript": {
         name: "javascript",
-        icon: <Sijavascript />
+        icon: <SiJavascript />
     },
     // "HTML": {
     //     name: "HTML",
@@ -60,10 +54,10 @@ const TechIcons = ({ techs, className }) => {
             {techs?.map((tech, index) => (
                 <li key={index}>
                     <span className="flexitems-center">
-                        {techList[tech].name}
+                        {/* {techList[tech].name} */}
                         {/* <SiMysql/> */}
                         {/* <Image src={techList[tech].icon} width={30} height={30} className={className} /> */}
-                        {/* {React.cloneElement(techList[tech].icon, { className })} */}
+                        {React.cloneElement(techList[tech].icon, { className })}
                     </span>
                 </li>
             ))}
