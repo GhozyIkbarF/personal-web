@@ -11,6 +11,7 @@ import spotify from '../assets/image/spotify.png';
 import todoList from '../assets/image/todoList.png';
 import infiniteScroll from '../assets/image/infiniteScroll.png';
 import theSocial from '../assets/image/thesocial.png';
+import Movies from '../assets/image/movies.png';
 
 import TechIcons from './Icon'
 
@@ -93,7 +94,7 @@ const Experience = () => {
 
     return (
         <div className="w-full flex flex-col sm:px-20 lg:px-40">
-
+            
         </div>
     )
 }
@@ -130,6 +131,14 @@ const projectsData = [
         repository: 'https://github.com/GhozyIkbarF/blog',
         livePreview: '',
         img: theSocial,
+    },
+    {
+        title: 'Movies App',
+        desc: 'Movie app for searching your favorite movies. Built with Next.js and Tailwind CSS.',
+        tech: ['next.js', 'tailwind CSS'],
+        repository: 'https://github.com/GhozyIkbarF/Movies',
+        livePreview: 'https://ghozyikbarf-movie-collection.vercel.app/',
+        img: Movies,
     },
 ]
 
