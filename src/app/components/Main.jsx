@@ -12,6 +12,7 @@ import todoList from '../assets/image/todoList.png';
 import infiniteScroll from '../assets/image/infiniteScroll.png';
 import theSocial from '../assets/image/thesocial.png';
 import Movies from '../assets/image/movies.png';
+import travelUmrah from '../assets/image/travel-umrah.png';
 
 import TechIcons from './Icon'
 
@@ -139,6 +140,14 @@ const projectsData = [
         repository: 'https://github.com/GhozyIkbarF/Movies',
         livePreview: 'https://ghozyikbarf-movie-collection.vercel.app/',
         img: Movies,
+    },
+    {
+        title: 'Travel Umrah',
+        desc: 'website yang berisi tentang informasi paket umrah, dimana kita dapat melihat paket umrah yang tersedia',
+        tech: ['laravel', 'tailwind CSS'],
+        repository: 'https://github.com/GhozyIkbarF/Travel-umrah',
+        livePreview: '',
+        img: travelUmrah,
     },
 ]
 

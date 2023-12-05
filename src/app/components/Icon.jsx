@@ -1,5 +1,5 @@
 import React from "react";
-import { SiNextdotjs, SiPrisma, SiMysql, SiTailwindcss, SiPhp, SiBootstrap, SiReact, SiJavascript, SiHtml5, SiVite, SiExpress } from "@icons-pack/react-simple-icons";
+import { SiNextdotjs, SiPrisma, SiMysql, SiTailwindcss, SiPhp, SiBootstrap, SiReact, SiJavascript, SiHtml5, SiVite, SiExpress, SiLaravel } from "@icons-pack/react-simple-icons";
 
 const techList = {
     "next.js": {
@@ -21,6 +21,10 @@ const techList = {
     "tailwind CSS": {
         name: "tailwind CSS",
         icon: <SiTailwindcss />
+    },
+    "laravel": {
+        name: "laravel",
+        icon: <SiLaravel />
     },
     // "PHP": {
     //     name: "PHP",
