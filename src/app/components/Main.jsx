@@ -13,6 +13,7 @@ import infiniteScroll from '../assets/image/infiniteScroll.png';
 import theSocial from '../assets/image/thesocial.png';
 import Movies from '../assets/image/movies.png';
 import travelUmrah from '../assets/image/travel-umrah.png';
+import gaveeta from '../assets/image/gaveeta.png';
 
 import TechIcons from './Icon'
 
@@ -148,6 +149,14 @@ const projectsData = [
         repository: 'https://github.com/GhozyIkbarF/Travel-umrah',
         livePreview: '',
         img: travelUmrah,
+    },
+    {
+        title: 'Gaveeta',
+        desc: 'website to manage orders on gaveeta',
+        tech: ['laravel', 'react.js', 'chakra UI'],
+        repository: 'https://github.com/GhozyIkbarF/gaveeta_fontend',
+        livePreview: 'https://gaveeta-fontend.vercel.app/',
+        img: gaveeta,
     },
 ]
 

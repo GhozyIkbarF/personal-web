@@ -1,5 +1,5 @@
 import React from "react";
-import { SiNextdotjs, SiPrisma, SiMysql, SiTailwindcss, SiPhp, SiBootstrap, SiReact, SiJavascript, SiHtml5, SiVite, SiExpress, SiLaravel } from "@icons-pack/react-simple-icons";
+import { SiNextdotjs, SiPrisma, SiMysql, SiTailwindcss, SiPhp, SiBootstrap, SiReact, SiJavascript, SiHtml5, SiVite, SiExpress, SiLaravel, SiChakraui } from "@icons-pack/react-simple-icons";
 
 const techList = {
     "next.js": {
@@ -25,6 +25,10 @@ const techList = {
     "laravel": {
         name: "laravel",
         icon: <SiLaravel />
+    },
+    "chakra UI": {
+        name: "chakra UI",
+        icon: <SiChakraui />
     },
     // "PHP": {
     //     name: "PHP",
